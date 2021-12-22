@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- ================== FAVICON ===================== -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <!-- ================== CSS ======================== -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body class="grid">
+    <header class="header">
+      <div class="header__logo">
+        <img src="assets/images/logo.svg" alt="logo" class="logo" />
+      </div>
+    </header>
+
+    <div class="container hero"></div>
+
+    <main class="container">
+      <section class="landing">
+        <div class="landing__info">
+          <h1 class="landing__info-title"><span>We're</span> coming soon</h1>
+          <p class="landing__info-para">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </div>
+
+        <div class="landing__form">
+          <form onclick="event.preventDefault(); validateEmail();">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+
+            <span class="error-text"></span>
+            <img
+              src="assets/images/icon-error.svg"
+              alt=""
+              class="error-icon"
+            />
+
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M1 1l8.836 8.836L1 18.671"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/RokuFSD">RokuFSD</a>.
+      </p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

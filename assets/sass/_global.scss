@@ -101,7 +101,7 @@ body {
       "footer hero";
     grid-template-columns: auto min(40%, 610px);
     grid-template-rows: min-content;
-    background: url(/assets/images/bg-pattern-desktop.svg);
+    background: url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -149,14 +149,14 @@ h1 {
   grid-area: hero;
   width: min(100%, 375px);
   min-height: 280px;
-  background: url(/assets/images/hero-mobile.jpg);
+  background: url(../images/hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
   @include respond-to("large") {
     width: 100%;
     min-height: 100%;
-    background: url(/assets/images/hero-desktop.jpg);
+    background: url(../images/hero-desktop.jpg);
     background-size: cover;
   }
 }
